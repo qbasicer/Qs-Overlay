@@ -1,0 +1,22 @@
+Make sure in /etc/layman/layman.cfg: file:///etc/portage/layman-custom.xml under "overlays"
+
+And layman-custom.xml:
+
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE repositories SYSTEM "/dtd/repositories.dtd">
+<repositories xmlns="" version="1.0">
+
+<repo quality="experimental" status="unofficial">
+<name><![CDATA[qsoverlay]]></name>
+<description><![CDATA[QBasicer's custom repo]]></description>
+<homepage>https://github.com/qbasicer/Qs-Overlay</homepage>
+<owner>                             
+<email>qbasicer@gmail.com</email>
+<name><![CDATA[Cody Harris]]></name>
+</owner>                                                            
+<source type="git">git://github.com/qbasicer/Qs-Overlay.git</source>
+<feed>http://github.com/feeds/qbasicer/commits/Qs-Overlay/master</feed>
+</repo>                                                                                     
+</repositories>
+
+
