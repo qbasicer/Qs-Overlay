@@ -18,6 +18,7 @@ RDEPEND="${DEPEND}
 	=x11-libs/gtk+-2*"
 
 src_compile(){
+	cd src/
 	econf
 	emake || die	
 }
