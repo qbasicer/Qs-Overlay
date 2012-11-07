@@ -19,7 +19,7 @@ DEPEND="media-libs/libmtp
         sys-fs/fuse"
 RDEPEND="${DEPEND}"
 
-src_unpack() {
+src_prepare() {
 	unpack ${A}
 	cd "${S}"
 	epatch "${FILESDIR}"/${PN}-gcc-4.7.patch
